@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SANTANIC.ID — Independent Digital Studio</title>
+<meta name="description" content="SANTANIC.ID adalah studio digital independen: website development, bot, sistem otomatisasi, dan solusi digital kreatif.">
+<meta name="theme-color" content="#0d0d10">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://portofolio-santanic.vercel.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SANTANIC.ID">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="SANTANIC.ID — Independent Digital Studio">
+<meta property="og:description" content="Studio digital independen: website, bot, otomatisasi, dan solusi digital kreatif.">
+<meta property="og:url" content="https://portofolio-santanic.vercel.app/">
+<meta property="og:image" content="https://portofolio-santanic.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SANTANIC.ID — We build the digital future.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SANTANIC.ID — Independent Digital Studio">
+<meta name="twitter:description" content="Studio digital independen: website, bot, otomatisasi, dan solusi digital kreatif.">
+<meta name="twitter:image" content="https://portofolio-santanic.vercel.app/og-image.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preload" href="/fonts/archivo-wdth.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/style.css">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"SANTANIC.ID","url":"https://portofolio-santanic.vercel.app/","description":"Studio digital independen: website, bot, otomatisasi, dan solusi digital kreatif."}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+
+<!-- Navbar desktop (>= 1024px). Di HP dipakai dock di bawah. -->
+<header class="bar" id="bar">
+  <div class="wrap bar__in">
+    <a class="brand" href="#home" data-go="home" aria-label="SANTANIC.ID — ke atas"></a>
+    <nav class="bar__nav" id="barNav" aria-label="Navigasi utama"></nav>
+    <button class="btn btn--sm btn--ghost" type="button" id="barMenu" aria-haspopup="dialog" aria-controls="sheet"></button>
+    <button class="btn btn--sm" type="button" data-go="contact"></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="home" class="hero" aria-labelledby="h1">
+    <div class="hero__bg" aria-hidden="true"><i class="cross cross--a"></i><i class="cross cross--b"></i></div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <a class="brand brand--lg" href="#home" data-go="home" aria-label="SANTANIC.ID"></a>
+        <p class="pill" id="heroLabel"></p>
+        <h1 id="h1" class="hero__title">
+          <span class="ln">WE BUILD</span>
+          <span class="ln">THE <mark>DIGITAL</mark></span>
+          <span class="ln ln--out">FUTURE.</span>
+        </h1>
+        <p class="hero__desc" id="heroDesc"></p>
+        <div class="hero__cta">
+          <button class="btn btn--lg" type="button" data-go="projects" id="ctaA"></button>
+          <button class="btn btn--lg btn--paper" type="button" data-go="team" id="ctaB"></button>
+        </div>
+      </div>
+
+      <div class="hero__stage" aria-hidden="true">
+        <div class="stage">
+          <div class="iso">
+            <div class="slab slab--3"><span class="slab__face"></span></div>
+            <div class="slab slab--2"><span class="slab__face"></span></div>
+            <div class="slab slab--1"><span class="slab__face"></span></div>
+          </div>
+        </div>
+        <span class="tagline tagline--1">Design</span>
+        <span class="tagline tagline--2">Code</span>
+        <span class="tagline tagline--3">Deploy</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="sec sec--alt" aria-labelledby="t-about">
+    <div class="wrap">
+      <header class="sec__head"><h2 id="t-about">About</h2></header>
+      <div class="about">
+        <div class="about__main">
+          <p class="about__big" id="aboutHead"></p>
+          <p class="about__text" id="aboutText"></p>
+        </div>
+        <div class="about__vm" id="aboutVM"></div>
+      </div>
+      <div class="values" id="values"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="sec" aria-labelledby="t-projects">
+    <div class="wrap">
+      <header class="sec__head">
+        <h2 id="t-projects">Projects</h2>
+        <p class="sec__lead">Karya dan proyek digital yang dikembangkan di bawah brand SANTANIC.ID.</p>
+      </header>
+      <div class="tools">
+        <label class="search" for="q">
+          <span class="sr">Cari project</span>
+          <span data-i="search" class="search__i"></span>
+          <input id="q" type="search" inputmode="search" enterkeyhint="search" placeholder="Cari project…" autocomplete="off">
+        </label>
+        <div class="chips" id="pf" role="group" aria-label="Filter kategori project"></div>
+      </div>
+      <p class="count" id="pCount" aria-live="polite"></p>
+      <div class="pgrid" id="pg"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="sec sec--alt" aria-labelledby="t-services">
+    <div class="wrap">
+      <header class="sec__head">
+        <h2 id="t-services">Services</h2>
+        <p class="sec__lead">Layanan yang tersedia dan siap dikembangkan bersama tim.</p>
+      </header>
+      <div class="sgrid" id="sv"></div>
+      <div class="sec__cta"><button class="btn" type="button" data-go="contact" id="svCta"></button></div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="sec" aria-labelledby="t-team">
+    <div class="wrap">
+      <header class="sec__head">
+        <h2 id="t-team">Team</h2>
+        <p class="sec__lead">Orang-orang di balik SANTANIC.ID.</p>
+      </header>
+      <div class="tgrid" id="tm"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="sec sec--alt" aria-labelledby="t-skills">
+    <div class="wrap">
+      <header class="sec__head">
+        <h2 id="t-skills">Skills</h2>
+        <p class="sec__lead">Teknologi yang menjadi fokus tim dalam membangun produk digital.</p>
+      </header>
+      <ul class="kgrid" id="sk"></ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="sec" aria-labelledby="t-exp">
+    <div class="wrap">
+      <header class="sec__head">
+        <h2 id="t-exp">Experience</h2>
+        <p class="sec__lead">Perjalanan SANTANIC.ID dan cara kami mengerjakan sebuah project.</p>
+      </header>
+      <div class="exp">
+        <div><h3 class="sub">Perjalanan</h3><ol class="tl" id="exJ"></ol></div>
+        <div><h3 class="sub">Alur kerja</h3><ol class="steps" id="exP"></ol></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section id="showcase" class="sec sec--alt" aria-labelledby="t-show">
+    <div class="wrap">
+      <header class="sec__head">
+        <h2 id="t-show">Showcase</h2>
+        <p class="sec__lead">Cuplikan visual project. Ketuk gambar untuk memperbesar.</p>
+      </header>
+      <div class="chips" id="shf" role="group" aria-label="Filter showcase"></div>
+      <div class="shgrid" id="sh"></div>
+    </div>
+  </section>
+
+  <!-- UPDATES -->
+  <section id="updates" class="sec sec--tight" aria-labelledby="t-up">
+    <div class="wrap">
+      <header class="sec__head"><h2 id="t-up">Updates</h2></header>
+      <div id="up"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="sec sec--tight sec--alt" aria-labelledby="t-ts">
+    <div class="wrap">
+      <header class="sec__head"><h2 id="t-ts">Testimonials</h2></header>
+      <div id="ts"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="sec" aria-labelledby="t-faq">
+    <div class="wrap faqw">
+      <header class="sec__head">
+        <h2 id="t-faq">FAQ</h2>
+        <p class="sec__lead">Pertanyaan yang paling sering ditanyakan.</p>
+      </header>
+      <div class="faq" id="fq"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="sec sec--alt sec--last" aria-labelledby="t-contact">
+    <div class="wrap contact">
+      <div class="contact__info">
+        <h2 id="t-contact">Punya project di pikiran?</h2>
+        <p class="sec__lead">Ceritakan idenya. Kita ubah jadi pengalaman digital yang nyata.</p>
+        <div class="channels" id="ct"></div>
+        <p class="note" id="ctNote"></p>
+      </div>
+      <form class="card card--focus form" id="f" novalidate>
+        <div class="field">
+          <label for="n">Nama</label>
+          <input id="n" name="nama" autocomplete="name" aria-describedby="e-n" required>
+          <p class="err" id="e-n"></p>
+        </div>
+        <div class="field">
+          <label for="e">Email</label>
+          <input id="e" name="email" type="email" inputmode="email" autocomplete="email" aria-describedby="e-e" required>
+          <p class="err" id="e-e"></p>
+        </div>
+        <div class="field">
+          <label for="m">Pesan</label>
+          <textarea id="m" name="pesan" rows="5" aria-describedby="e-m" required></textarea>
+          <p class="err" id="e-m"></p>
+        </div>
+        <button class="btn btn--lg" type="submit" id="fSend"></button>
+        <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <a class="brand" href="#home" data-go="home" aria-label="SANTANIC.ID — ke atas"></a>
+      <p id="ft1"></p>
+      <p class="foot__copy">Designed &amp; developed by SANTANIC.ID Team.<br>© <span id="yr"></span> SANTANIC.ID</p>
+    </div>
+    <nav aria-label="Menu footer"><h3>Menu</h3><div id="fl"></div></nav>
+    <div><h3>Tim</h3><div id="ftm"></div></div>
+  </div>
+</footer>
+
+<!-- Dock bawah (HP/tablet) -->
+<nav class="dock" id="dock" aria-label="Navigasi utama"></nav>
+
+<!-- Panel More -->
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet__bd" data-close></div>
+  <div class="sheet__pn" role="dialog" aria-modal="true" aria-labelledby="sheetT">
+    <div class="sheet__top">
+      <h2 id="sheetT">Menu lainnya</h2>
+      <button class="icobtn" type="button" id="sheetX" aria-label="Tutup menu"></button>
+    </div>
+    <div class="sheet__grid" id="mg"></div>
+  </div>
+</div>
+
+<!-- Detail project -->
+<dialog id="dlg" class="dlg" aria-labelledby="dT">
+  <div class="dlg__in">
+    <div id="dc"></div>
+    <button class="icobtn dlg__x" type="button" id="dx" aria-label="Tutup"></button>
+  </div>
+</dialog>
+
+<!-- Lightbox showcase -->
+<dialog id="lb" class="dlg dlg--lb" aria-label="Pratinjau gambar">
+  <div class="dlg__in">
+    <figure class="lb__fig"><img id="lbImg" alt="" decoding="async"><figcaption id="lbCap"></figcaption></figure>
+    <button class="icobtn dlg__x" type="button" id="lbX" aria-label="Tutup"></button>
+    <button class="icobtn lb__nav lb__nav--p" type="button" id="lbP" aria-label="Sebelumnya"></button>
+    <button class="icobtn lb__nav lb__nav--n" type="button" id="lbN" aria-label="Berikutnya"></button>
+  </div>
+</dialog>
+
+<noscript><p style="padding:24px;text-align:center">Aktifkan JavaScript untuk melihat konten SANTANIC.ID.</p></noscript>
+
+<script src="/js/icons.js"></script>
+<script src="/js/techlogos.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
